@@ -55,7 +55,8 @@ function savePasswordToHistory() {
 function displayPasswordHistory() {
     const history = JSON.parse(localStorage.getItem('passwordHistory')) || [];
     const historyList = document.getElementById('passwordHistory');
-    historyList.innerHTML = '';
+    historyList.innerHTML = ''; // Clear the current list
+    
     history.forEach(({ name, password }) => {
         const li = document.createElement('li');
         li.textContent = `${name}: ${password}`;
