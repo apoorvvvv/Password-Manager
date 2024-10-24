@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Password Generator</title>
+    <title>Password Manager</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Password Generator</h1>
+    <h1>Password Manager</h1>
     <div class="generator">
         <!-- Existing content goes here -->
         <div class="password">
             <input type="text" id="passwordOutput" placeholder="Generated password" />
             <button id="copyBtn">Copy</button>
         </div>
-        
+    
         <div class="name">
             <input type="text" id="passwordName" placeholder="Enter name (e.g., Facebook)" />
         </div>
-
+    
         <div class="range">
             <input type="range" min="4" max="24" value="8" id="passwordLength" />
             <span id="rangeValue">8</span>
         </div>
-
+    
         <div class="options">
             <label>
                 <input type="checkbox" id="lowercaseCb" checked /> a-z
@@ -39,9 +39,9 @@
                 <input type="checkbox" id="specialsCb" /> !@$#%^
             </label>
         </div>
-
+    
         <button class="generate" id="generateBtn">Generate & Save</button>
-
+    
         <div class="history">
             <h3>Password History</h3>
             <div class="history-controls">
@@ -50,12 +50,13 @@
                     <span class="material-icons">download</span>
                 </button>
             </div>
-            <ul id="passwordHistory"></ul> <!-- This is where the history is displayed -->
+            <ul id="passwordHistory"></ul>
         </div>
+    
+        <!-- Note added at the end of the generator -->
+        <p class="credit">Created by Apoorv</p>
+        <p class="disclaimer">Note: All passwords generated and saved are stored locally in your browser. This site does not collect or store any data on a server.</p>
     </div>
-
-    <!-- Moved this line outside the generator div -->
-    <p class="credit">Created by Apoorv</p>
     <script src="script.js"></script>
 </body>
 
