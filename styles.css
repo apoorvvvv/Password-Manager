@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+    background-color: white;
+    color: #333;
+    font-family: "Roboto Mono", monospace;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #4caf50;
+    margin: 0;
+}
+
+.generator {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.generator:hover {
+    transform: scale(1.03);
+}
+
+.password {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    margin-bottom: 10px;
+}
+
+.password input {
+    padding: 12px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.password button {
+    background-color: #4caf50;  /* Green button */
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    transition: background-color 0.3s ease;
+}
+
+.password button:hover {
+    background-color: #388e3c;  /* Darker green */
+}
+
+.name input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+.range {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    align-items: center;
+}
+
+.range input {
+    width: 100%;
+    cursor: pointer;
+}
+
+.range span {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.options label {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.options label:hover {
+    background-color: #e0e0e0;
+}
+
+button.generate {
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;  /* Green like Clear & Download */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.generate:hover {
+    background-color: #388e3c;  /* Darker green on hover */
+}
+
+.history {
+    text-align: left;
+}
+
+.history h3 {
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.history-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.history button {
+    background-color: #4caf50;  /* Green button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.history button:hover {
+    background-color: #388e3c;  /* Darker green */
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.history ul li {
+    background-color: #f5f5f5;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 5px;
+    word-break: break-word;
+    transition: background-color 0.3s ease;
+}
+
+.history ul li:hover {
+    background-color: #e0e0e0;
+}
