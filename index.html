@@ -7,20 +7,15 @@
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
     <h1>Password Generator</h1>
     <div class="generator">
+        <!-- Existing content goes here -->
         <div class="password">
-            <!-- Removed 'readonly' so typing is allowed -->
             <input type="text" id="passwordOutput" placeholder="Generated password" />
             <button id="copyBtn">Copy</button>
         </div>
-        <p style="font-size: 12px; color: #777;">
-            Note: All passwords generated and saved are stored locally in your browser. 
-            This site does not collect or store any data on a server.
-        </p>
-
+        
         <div class="name">
             <input type="text" id="passwordName" placeholder="Enter name (e.g., Facebook)" />
         </div>
@@ -55,11 +50,14 @@
                     <span class="material-icons">download</span>
                 </button>
             </div>
-            <ul id="passwordHistory"></ul>
+            <ul id="passwordHistory"></ul> <!-- This is where the history is displayed -->
         </div>
     </div>
 
+    <!-- Moved this line outside the generator div -->
+    <p class="credit">Created by Apoorv</p>
     <script src="script.js"></script>
 </body>
 
 </html>
+
