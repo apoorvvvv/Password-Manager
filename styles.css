@@ -147,3 +147,14 @@ button.generate:hover {
 .history ul li:hover {
     background-color: #e0e0e0; /* Slightly darker on hover */
 }
+
+.credit {
+    text-align: center;  /* Center the text */
+    font-size: 12px;     /* Smaller font size */
+    color: #888888;      /* Gray color for the text */
+    margin-top: 20px;    /* Space above the line */
+    position: absolute;   /* Position it at the bottom */
+    bottom: 10px;         /* Distance from the bottom */
+    left: 50%;            /* Center horizontally */
+    transform: translateX(-50%); /* Center the text */
+}
